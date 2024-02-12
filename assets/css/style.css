@@ -98,6 +98,10 @@ main{
     margin-top: calc(var(--header-height) + 3.2rem);
 }
 
+.paragraph{
+    text-align: justify;
+}
+
 .icon{
     width: 30px;
     height: 30px;
@@ -114,6 +118,10 @@ main{
 .logo span {
     font: 700 2.1rem 'Poppins', sans-serif;
     color: var(--base-color-strong)
+}
+
+.logo-alt span{
+    color: var(--menu-color);
 }
 
 /*===================== NAVIGATION =====================*/
@@ -331,7 +339,6 @@ nav.show div.close-menu{
 
 #about .text{
     margin-inline: 3rem;
-    text-align: justify;
 }
 
 /*===================== SERVICES =====================*/
@@ -356,4 +363,186 @@ nav.show div.close-menu{
 .card .title{
     font-size: 2.4rem;
     margin-bottom: 1.2rem;
+}
+
+/*===================== TESTIMONIALS =====================*/
+
+.section header{
+
+}
+
+#testimonials .container{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#testimonials header{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#testimonials header h2{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.testimonials blockquote{
+    padding: 3.2rem;
+    box-shadow: 0px 0px 12px rgb(0, 0, 0, 0.473);
+    border-radius: 0.5rem;
+}
+
+.testimonials blockquote p{
+    position: relative;
+    text-indent: 3rem;
+    margin-bottom: 2.4rem;
+}
+
+.testimonials blockquote p span{
+    font: 700 4rem serif;
+    color: var(--base-color-mediun);
+
+    position: absolute;
+    top: -0.5rem;
+    left: -3rem;
+}
+
+.testimonials cite{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.testimonials cite img{
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    clip-path: circle();
+    margin-right: 0.8rem;
+}
+
+/* Swiper */
+
+.swiper-slide{
+    height: auto;
+    padding: 3.2rem;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--base-color-mediun);
+}
+
+/*===================== CONTACT =====================*/
+
+#contact .grid{
+    gap: 4rem;
+} 
+
+#contact .text h2{
+    text-align: left;
+}
+
+#contact .text p{
+    margin-bottom: 3.2rem;
+    text-align: justify;
+}
+
+#contact .text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contact .text .button{
+    width: 18rem;
+    margin: auto;
+}
+
+#contact ul li img,
+#contact .button img{
+    margin-right: 10px;
+}
+
+#contact ul.grid{
+    gap: 2rem;
+}
+
+#contact ul li {
+    display: flex;
+    align-items: center;
+}
+
+.icon-p{
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+}
+
+/*===================== FOOTER =====================*/
+
+footer{
+    background-color: var(--base-color-strong);
+    color: black;
+}
+
+footer a{
+    color: black;
+}
+
+footer .social a{
+    transition: .3s;
+    display: inline-block;
+}
+
+footer .social a:hover{
+    transform: translateY(-5px);
+}
+
+footer .logo{
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+
+footer .brand p{
+    margin-bottom: 1.2rem;
+}
+
+footer .icon-p{
+    width: 28px;
+    height: 28px;
+    margin-right: 3.2rem;
+}
+
+/*===================== BACK TO TOP =====================*/
+
+.back-to-top{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 2.4rem;
+    bottom: 2.4rem;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: .3s;
+    transform: translateY(100%);
+}
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/*===================== MEDIA QUERIES =====================*/
+
+@media (min-width: 992px){
+    
 }

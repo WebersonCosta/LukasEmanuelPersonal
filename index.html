@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lukas Emanuel</title>
+
+    <!-- Swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&family=Sriracha&display=swap" rel="stylesheet">
-
 
 </head>
 <body>
@@ -22,7 +27,7 @@
                     <li><a class="title" href="#home">Inicio</a></li>
                     <li><a class="title" href="#about">Sobre</a></li>
                     <li><a class="title" href="#services">Serviços</a></li>
-                    <li><a class="title" href="#testemonials">Depoimentos</a></li>
+                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
                     <li><a class="title" href="#contact">Contato</a></li>
                 </ul>
             </div>
@@ -33,6 +38,7 @@
     </header>
     
     <main>
+        <!--    Seção do topo do site (HOME)    -->
         <section class="section" id="home">
             <div class="container grid">
                 <div class="image">
@@ -47,7 +53,7 @@
         </section>
 
         <div class="divider-1"></div>
-        
+        <!--    Seção sobre mim (ABOUT)    -->
         <section class="section" id="about">
             <div class="container grid">
                 <div class="image">
@@ -55,19 +61,19 @@
                 </div>
                 <div class="text">
                     <h2 class="title">Sobre mim</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore a veritatis neque quibusdam impedit quam exercitationem sunt mollitia asperiores quo quisquam omnis vitae, eos nam corrupti ipsa repudiandae possimus.</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt neque placeat ex a impedit amet esse cumque nam, obcaecati laborum architecto voluptate voluptas, fugiat accusantium eligendi dolor sit culpa!</p>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore a veritatis neque quibusdam impedit quam exercitationem sunt mollitia asperiores quo quisquam omnis vitae, eos nam corrupti ipsa repudiandae possimus.</p><br>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt neque placeat ex a impedit amet esse cumque nam, obcaecati laborum architecto voluptate voluptas, fugiat accusantium eligendi dolor sit culpa!</p>
                 </div>
             </div>
         </section>
 
         <div class="divider-2"></div>
-        
+        <!--    Seção sobre meus serviços (SERVICES)    -->
         <section class="section" id="services">
             <div class="container grid">
                 <header>
                     <h2 class="title">Serviços</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, reiciendis nemo molestiae sunt aut, distinctio assumenda architecto saepe temporibus.</p>
+                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, reiciendis nemo molestiae sunt aut, distinctio assumenda architecto saepe temporibus.</p>
                 </header>
                 <div class="cards grid">
                     <div class="card">
@@ -90,21 +96,108 @@
         </section>
 
         <div class="divider-1"></div>
-        
-        <section class="section" id="testemonials">
-            <div class="container grid">
-                
+        <!--    Seção sobre depoimentos de clientes (TESTIMONIALS)    -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <header>
+                    <h2 class="title">Depoimentos</h2>
+                </header>
+                <!-- Slider main container -->
+                <div class="testimonials swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut veniam nostrum non quae sequi suscipit quisquam, temporibus eligendi nesciunt aspernatur, explicabo aliquam praesentium rerum eum! Totam amet nulla rem?</p>
+                                <cite>
+                                    <img src="assets/img/26.jpg" alt="">
+                                    Wanessa Souza
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut veniam nostrum non quae sequi suscipit quisquam, temporibus eligendi nesciunt aspernatur, explicabo aliquam praesentium rerum eum! Totam amet nulla rem?</p>
+                                <cite>
+                                    <img src="assets/img/57.jpg" alt="">
+                                    Adriana Silva
+                                </cite>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+                                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut veniam nostrum non quae sequi suscipit quisquam, temporibus eligendi nesciunt aspernatur, explicabo aliquam praesentium rerum eum! Totam amet nulla rem?</p>
+                                <cite>
+                                    <img src="assets/img/86.jpg" alt="">
+                                    Ezequiel Nascimento
+                                </cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
 
         <div class="divider-2"></div>
-        
+        <!--    Seção de contato (CONTACT)    -->
         <section class="section" id="contact">
             <div class="container grid">
-                
+
+                <div class="text">
+                    <h2 class="title">Entre em contato!</h2>
+                    <p>Entre em contato comigo para tirar suas duvidas ou contratar meus serviços</p>
+                    <a href="https://wa.me/5585991160821" class="button"><img class="icon-p" src="assets/img/icon-whatsapp.png" alt="">CONTATO</a>
+                </div>
+
+                <div class="links">
+                    <ul class="grid">
+                        <li><img class="icon-p" src="assets/img/icon-phone.png" alt="">85 991160821</li>
+                        <li><img class="icon-p" src="assets/img/icon-mail.png" alt=""> contact@lukasemanuel.com.br</li>
+                    </ul>
+                </div>
             </div>
         </section>
+
+        <div class="divider-1"></div>
     </main>
+
+    <!--  FOOTER  -->
+    <footer class="section">
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#">Lukas<span>Emanuel</span>.</a>
+                <a target="_blank" href="https://webersoncosta.github.io/meu-portfolio/">
+                    <p>&copy;WebersonCosta.</p>
+                </a>
+                <p>Todos os direitos reservados.</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="icon-p" src="assets/img/icon-instagram.png" alt="">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="icon-p" src="assets/img/icon-youtube.png" alt="">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="icon-p" src="assets/img/icon-facebook.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home"><img class="back-to-top" src="assets/img/arrow-up.png" alt="seta apontando para cima"></a>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>

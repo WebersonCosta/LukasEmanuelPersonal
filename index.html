@@ -17,7 +17,18 @@
     <header id="header">
         <nav class="container">
             <a class="logo" href="#">Lukas<span>Emanuel</span>.</a>
-            <div class="menu">...</div>
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#home">Inicio</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testemonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="toggle open-menu"><img class="icon" src="assets/img/open.png" alt=""></div>
+            <div class="toggle close-menu"><img class="icon" src="assets/img/remove.png" alt=""></div>
         </nav>
     </header>
     
@@ -28,7 +39,7 @@
                     <img src="assets/img/body-black-white.png" alt="Homem forte segurando um halter">
                 </div>
                 <div class="text">
-                    <h1>Sem dor, Sem ganho!</h1>
+                    <h2 class="title">Sem dor, Sem ganho!</h2>
                     <p>Personal trainer especializado em ganho de massa muscular e emagrecimento saudável.</p>
                     <a class="button" href="#">Entre em contato</a>
                 </div>
@@ -37,11 +48,63 @@
 
         <div class="divider-1"></div>
         
-        <section class="section">
-            <div class="container">
+        <section class="section" id="about">
+            <div class="container grid">
+                <div class="image">
+                    <img src="assets/img/minha-foto.png" alt="Minha foto em uma academia">
+                </div>
+                <div class="text">
+                    <h2 class="title">Sobre mim</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore a veritatis neque quibusdam impedit quam exercitationem sunt mollitia asperiores quo quisquam omnis vitae, eos nam corrupti ipsa repudiandae possimus.</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sunt neque placeat ex a impedit amet esse cumque nam, obcaecati laborum architecto voluptate voluptas, fugiat accusantium eligendi dolor sit culpa!</p>
+                </div>
+            </div>
+        </section>
 
+        <div class="divider-2"></div>
+        
+        <section class="section" id="services">
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Serviços</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, reiciendis nemo molestiae sunt aut, distinctio assumenda architecto saepe temporibus.</p>
+                </header>
+                <div class="cards grid">
+                    <div class="card">
+                        <div class="icon-"><img class="icon-service" src="assets/img/icon-halter.png" alt=""></div>                       
+                        <h3 class="title">Treino supervisionado</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam tempore, nostrum ipsa exercitationem.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon-"><img class="icon-service" src="assets/img/icon-body-avaliation.png" alt=""></div>                      
+                        <h3 class="title">Avaliação física</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minima, voluptatibus similique a vero ipsum</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon-"><img class="icon-service" src="assets/img/icon-token.png" alt=""></div>
+                        <h3 class="title">Ficha personalizada</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere voluptate iste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-1"></div>
+        
+        <section class="section" id="testemonials">
+            <div class="container grid">
+                
+            </div>
+        </section>
+
+        <div class="divider-2"></div>
+        
+        <section class="section" id="contact">
+            <div class="container grid">
+                
             </div>
         </section>
     </main>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

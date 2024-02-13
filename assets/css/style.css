@@ -4,6 +4,11 @@
 
 :root{
     font-size: 62.5%; /* 1rem = 10px*/
+    /* fonts */
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+    --title-font-size: 3rem;
+    --subtitle-font-size: 1.6rem;
 
     --header-height: 7.2rem;
 
@@ -49,14 +54,14 @@ html{
 }
 
 body{
-    font-family: 'DM Sans', sans-serif;
+    font: 400 1.6rem var(--body-font);
     color: var(--text-color);
     background: var(--body-color);
     -webkit-font-smoothing: antialiased;
 }
 
 .title{
-    font: 700 3rem 'Poppins', sans-serif;
+    font: 700 3rem var(--title-font);
     color: var(--title-color);
     -webkit-font-smoothing: auto;
 }
@@ -69,7 +74,7 @@ body{
     align-items: center;
     padding-inline: 3.2rem;
     border-radius: .4rem;
-    font-size: 500  'DM Sans', sans-serif;
+    font-size: 500 var(--body-font);
     transition: .3s;
     cursor: pointer;
 }
@@ -94,10 +99,6 @@ body{
     hsla(35, 100%, 46%, 1));
 }
 
-main{
-    margin-top: calc(var(--header-height) + 3.2rem);
-}
-
 .paragraph{
     text-align: justify;
 }
@@ -111,13 +112,13 @@ main{
 /*===================== LOGO =====================*/
 
 .logo{
-    font: 700 2.1rem 'Poppins', sans-serif;
+    font: 700 2.1rem var(--title-font);
     color: var(--title-color);
 }
 
 .logo span {
-    font: 700 2.1rem 'Poppins', sans-serif;
-    color: var(--base-color-strong)
+    font: 700 2.1rem var(--title-font);
+    color: var(--base-color-strong);
 }
 
 .logo-alt span{
@@ -225,11 +226,15 @@ nav.show .menu ul{
 }
 
 .section{
-    padding-block: 8rem;
+    padding: 8rem;
 }
 
 .section .title{
     padding-bottom: 1.6rem;
+}
+
+.section .subtitle{
+    font-size: var(--subtitle-font-size);
 }
 
 .section header{
@@ -263,6 +268,10 @@ nav.show div.close-menu{
 
 #home .container{
     margin: 0;
+}
+
+#home.section{
+    padding-block: calc(8rem + var(--header-height));
 }
 
 #home .image{
@@ -494,6 +503,11 @@ footer a{
     color: black;
 }
 
+footer .social{
+    grid-auto-flow: column;
+    width: fit-content;
+}
+
 footer .social a{
     transition: .3s;
     display: inline-block;
@@ -515,7 +529,7 @@ footer .brand p{
 footer .icon-p{
     width: 28px;
     height: 28px;
-    margin-right: 3.2rem;
+    margin-right: 0;
 }
 
 /*===================== BACK TO TOP =====================*/
@@ -537,12 +551,147 @@ footer .icon-p{
 .back-to-top.show{
     visibility: visible;
     opacity: 1;
-
     transform: translateY(0);
 }
 
 /*===================== MEDIA QUERIES =====================*/
 
-@media (min-width: 992px){
+/* large devices: 1200 > */
+@media(min-width: 1200px){
     
+    /*  reusable classes  */
+
+    .container{
+        max-width: 1120px;
+        margin-inline: auto;
+    }
+
+    .section{
+        padding: 16rem 0
+    }
+
+    .section header,
+    #testimonials header{
+         max-width: 52.3rem;
+         text-align: center;
+         margin-inline: auto;
+    }
+
+    .button{
+        height: 5rem;
+    }
+
+    /*  navigation  */
+
+    nav .menu{
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    nav ul li a::after{
+        bottom: -2.4rem;    
+    }
+
+    nav .menu ul{
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    nav .menu ul li a{
+        right: 0;
+    }
+
+    nav .menu ul li a.title{
+        font: 400 1.6rem var(--body-font);
+    }
+
+    nav .toggle{
+        display: none;
+    }
+
+    /*  layout  */
+
+    main{
+        margin-top: var(--header-height);
+    }
+
+    /*  HOME  */
+
+    #home .container{
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    #home .image{
+        order: 1;
+    }
+
+    #home .text{
+        order: 0;
+        max-width: 39.6rem;
+        text-align: left;
+    }
+
+    /*  about  */
+    #about .container{
+        margin: 0 auto;
+        grid-auto-flow: column;
+    }
+
+    /*  services  */
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card{
+        padding-inline: 4.8rem;
+    }
+
+    /*  testimonials  */
+
+    #testimonials .container{
+        margin-inline: auto;
+    }
+
+    /*  contact  */
+
+    #contact .container{
+        grid-auto-flow: column; 
+        align-items: center;
+    }
+
+    #contact .text{
+        max-width: 40.4rem;
+    }
+
+    #contact .text .button{
+        margin-left: 0;
+    }
+
+    /*  footer  */
+    footer.section{
+        padding: 6.1rem 0;
+    }
+
+    footer .container{
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .logo,
+    footer .logo{
+        font-size: 3.5rem;
+    }
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px){
+    :root{
+        --title-font-size: 3.6rem;
+        --subtitle-font-size: 1.8rem;
+    }
 }

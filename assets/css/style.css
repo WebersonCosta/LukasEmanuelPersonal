@@ -143,8 +143,9 @@ nav ul li a{
     position: relative;
 }
 
+nav ul li a.active,
 nav ul li a:hover{
-    color: var(--base-color-strong)
+    color: var(--base-color-strong);
 }
 
 nav ul li a::after{
@@ -159,6 +160,7 @@ nav ul li a::after{
     transition: width 0.2s;
 }
 
+nav ul li a.active::after,
 nav ul li a:hover::after{
     width: 100%;
 }
@@ -226,7 +228,7 @@ nav.show .menu ul{
 }
 
 .section{
-    padding: 8rem;
+    padding-block: 8rem;
 }
 
 .section .title{
@@ -602,6 +604,10 @@ footer .icon-p{
         right: 0;
     }
 
+    nav .menu ul li a.active{
+        font-weight: bold;
+    }
+
     nav .menu ul li a.title{
         font: 400 1.6rem var(--body-font);
     }
@@ -672,7 +678,7 @@ footer .icon-p{
     }
 
     /*  footer  */
-    footer.section{
+   footer.section{
         padding: 6.1rem 0;
     }
 
@@ -683,7 +689,7 @@ footer .icon-p{
     }
 
     footer .logo,
-    footer .logo{
+    footer .logo span{
         font-size: 3.5rem;
     }
 }

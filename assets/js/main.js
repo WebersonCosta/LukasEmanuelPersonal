@@ -59,7 +59,7 @@ scrollreveal.reveal(
     #services header, #services .card,
     #testimonials header, #testimonials .testimonials,
     #contact .text, #contact .links,
-    footer .brand, footer .social
+    footer .brand, footer .partner, footer .social
     `,{interval: 100})
 
 /* ================== BACK TO TOP BUTTON ===================== */
